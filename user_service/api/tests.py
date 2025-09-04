@@ -12,7 +12,7 @@ def test_user_registration():
     client = APIClient()
     url = reverse('register') # 'register' is the name we gave in api/urls.py
     data = {
-        'username': 'testuser',
+        'username': 'newtestuser',
         'password': 'strongpassword123',
         'email': 'test@example.com'
     }
