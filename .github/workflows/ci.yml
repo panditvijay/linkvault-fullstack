@@ -29,7 +29,7 @@ jobs:
 
     - name: Run User Service Tests
       # We need to specify the root of the Django project for pytest to find settings
-      run: pytest user_service/
+      run: PYTHONPATH=$PYTHONPATH:$(pwd) pytest user_service/
 
     # --- Test Bookmark Service (You would add tests for it here) ---
     # (For now, we will skip this to keep it simple, but the pattern is the same)
